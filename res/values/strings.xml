@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">智能日志</string>
+    <string name="action_settings">设置</string>
+    <string name="title_section1">地图</string>
+    <string name="title_section2">记录</string>
+    <string name="title_section3">统计</string>
+    
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
+
+</resources>
