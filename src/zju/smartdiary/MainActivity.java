@@ -130,12 +130,15 @@ public class MainActivity extends FragmentActivity implements
 			
 			switch (position) {
 			case 0:
-	//			return new MyMap();
 				return new MyMap(m_MyDataBaseAdapter);
 			case 1:
-				return Record.newInstance();
+				return new Record(m_MyDataBaseAdapter);
 			case 2:
-				return Statistics.newInstance();
+				return new Statistics(m_MyDataBaseAdapter);
+			case 3:
+				return new Statistics2(m_MyDataBaseAdapter);
+			case 4:
+				return new Statistics3(m_MyDataBaseAdapter);
 			}
 			return null;
 		}
@@ -143,7 +146,8 @@ public class MainActivity extends FragmentActivity implements
 		@Override
 		public int getCount() {
 			// Show 3 total pages.
-			return 3;
+//			return 3;
+			return 5;
 		}
 
 		@Override
@@ -155,6 +159,11 @@ public class MainActivity extends FragmentActivity implements
 				return getString(R.string.title_section2);
 			case 2:
 				return getString(R.string.title_section3);
+			case 3:
+				return getString(R.string.title_section4);
+			case 4:
+				return getString(R.string.title_section5);
+				
 			}
 			return null;
 		}

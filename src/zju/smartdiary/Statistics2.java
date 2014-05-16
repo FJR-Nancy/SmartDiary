@@ -29,7 +29,7 @@ import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TextView;
 
 @SuppressLint("ValidFragment")
-public  class Statistics extends Fragment{
+public  class Statistics2 extends Fragment{
 	private MyDataBaseAdapter m_MyDataBaseAdapter;
 	
 	Context context;
@@ -50,10 +50,10 @@ public  class Statistics extends Fragment{
 //	    return f;
 //	}
 	
-	public Statistics() {
+	public Statistics2() {
 	}
 
-	public Statistics(MyDataBaseAdapter m_MyDataBaseAdapter) {
+	public Statistics2(MyDataBaseAdapter m_MyDataBaseAdapter) {
 		this.m_MyDataBaseAdapter = m_MyDataBaseAdapter;
 	}
 	
@@ -72,12 +72,13 @@ public  class Statistics extends Fragment{
 		
 ////		radioGroupInit();
 //				
-		LineChart lineChart=new LineChart(m_MyDataBaseAdapter);
-		GraphicalView lineChartView=lineChart.execute(context);
-		return lineChartView;
+//		LineChart lineChart=new LineChart(m_MyDataBaseAdapter);
+//		GraphicalView lineChartView=lineChart.execute(context);
+//		return lineChartView;
 //		
-//		PieChart pieChart=new PieChart(m_MyDataBaseAdapter);
-//		GraphicalView pieChartView=pieChart.execute(context);
+		PieChart pieChart=new PieChart(m_MyDataBaseAdapter);
+		GraphicalView pieChartView=pieChart.execute(context);
+		return pieChartView;
 //		
 //		BarChart barChart=new BarChart(m_MyDataBaseAdapter);
 //		GraphicalView barChartView=barChart.execute(context);
